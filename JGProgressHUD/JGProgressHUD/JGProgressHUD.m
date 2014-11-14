@@ -21,7 +21,7 @@
 
 #define kBaseSDKiOS8 (__IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0)
 
-#if kBaseSDKiOS8
+#if kBaseSDKiOS8_
 #define iOS8ex(available, unavailable) \
 if (iOS8) { \
 available \
