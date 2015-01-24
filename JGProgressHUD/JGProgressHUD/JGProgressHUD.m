@@ -409,7 +409,6 @@ static CGRect keyboardFrame = (CGRect){{0.0f, 0.0f}, {0.0f, 0.0f}};
 
 - (void)cleanUpAfterDismissal {
     self.hidden = YES;
-    [self removeFromSuperview];
     
     [self removeObservers];
     
@@ -422,6 +421,7 @@ static CGRect keyboardFrame = (CGRect){{0.0f, 0.0f}, {0.0f, 0.0f}};
     }
     
     _targetView = nil;
+    [self removeFromSuperview];
 }
 
 - (void)dismiss {
